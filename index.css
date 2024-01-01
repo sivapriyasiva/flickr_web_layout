@@ -202,11 +202,9 @@
         .font{
             font-size: 15px;
             
-        }
+              }
 
-        /*.drop_down_arrow,.share_icon,.thumbnail_one,.thumbnail_two,.thumbnail_three,.search_icon,.upload,
-        .pattern_black_white,.pattern_circle,.pattern_blur,.pattern_line,.tooltip,.dropdown,.logo,.logoname,
-        .star_icon,.comment_icon,.more_icon,.plus_icon,.tick*/.icons{
+            .icons{
                 background-image: url("https://combo.staticflickr.com/ap/build/images/sprites/icons-87310c47.png");
             }
 
