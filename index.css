@@ -147,6 +147,7 @@
             height:50%;
             display: flex;
             flex-direction: column;
+           
           
         }
 
@@ -165,7 +166,7 @@
             height:10%;
         }
         #set_one .gallery_one{
-            height:55% ;
+            height:55%;
         }
         #set_one .upgarde{
             height:10%;
@@ -202,11 +203,12 @@
         .font{
             font-size: 15px;
             
-              }
+        }
 
-            .icons{
-                background-image: url("https://combo.staticflickr.com/ap/build/images/sprites/icons-87310c47.png");
-            }
+        .icons
+        {
+            background-image: url("https://combo.staticflickr.com/ap/build/images/sprites/icons-87310c47.png");
+        }
 
             .logo{
                 height: 10px;
@@ -233,7 +235,7 @@
                 width: 20px;
             }    
             
-            .tick {
+            /*.tick {
                 position: absolute;
                 background-position-x: -1640px;
                 background-position-y: -1121px;
@@ -246,7 +248,7 @@
             }
             div[name="colors"]:focus-within .tick {
                 display: block;
-            }
+            }*/
             .upload{
                 
                 background-position-x: -412px;
@@ -436,7 +438,7 @@
         .gallery_one{
             display: flex;
             gap: 3px;
-            height:75%;
+            height:80%;
             
         }
         .pic,.pic>img{
@@ -531,7 +533,7 @@
         }
 
         .author_name, .box4 li{
-            color:  #898989;
+            
             font-size: 12px;
         }
         .head_title{
@@ -656,25 +658,32 @@
         .db_picture:hover {
             transition: all .15s ease-in-out;   
         }
-        .db_picture:hover + .avatar .border,
-        .avatar:hover .border {
-            height: 40px;
-            width: 40px;
-        }
+       
 
         .avatar{
             position: relative;
+            
         
         }
-        .border{
-            height: 38px;
-            width:38px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            border: 1px solid rgb(167, 156, 156);
-            display: flex; 
+        .avatar::after{
+            background: transparent;
+            border-radius: 100%;
+            box-shadow: 0 0 0 1px #afb7bc;
+            content: "";
+            height: 36px;
+            position: absolute;
+            transition: all .15s ease-in-out;
+            width: 36px;
+            margin:-3px -2px -2px -2px ;
         }
+        .avatar:hover::after{
+            height: 39px;
+            width:39px;
+            margin: -4px -1px -4px -4px; 
+           
+        }
+
+        
 
         .before{
             position: absolute;
@@ -691,9 +700,7 @@
             
         }
 
-        .border:hover .before{
-            display: flex;
-        }
+        
         /*.before::after{
             content: "";
             border-top: 15px solid white;
@@ -816,7 +823,7 @@
         a, .profile .join, .before a{
             color: #128fdc;
         }
-        .options_container li, .advanced_tooltip, .top_bar li, .link, .box4 li{
+        .options_container li, .advanced_tooltip, .top_bar li, .link, .box4 li,.author_name{
             color: #898989;
         }
 
@@ -843,7 +850,7 @@
         .parent{
             height: auto;
             position: sticky;
-            top:144px;
+            top:125px;
         }
 
 
